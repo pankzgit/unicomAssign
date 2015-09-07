@@ -1,0 +1,79 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/passwordSt.css">
+	<link rel="stylesheet" href="css/formC.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="formWrapper">
+		<div>
+			Error Message:
+		</div>
+		<div class="errorLayout">
+
+			<span class = "msg">
+				
+			</span>
+		</div>
+		<form role="form" class="formE">
+		  <div class="form-group">
+		    <label for="name">Name:</label>
+		    <input type="name" class="form-control" id="name" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="zipcode">Zipcode:</label>
+		    <input type="text" class="form-control" id="zipcode" required pattern="[0-9]*" maxlength="6" min="0">
+		  </div>
+		  <div class="form-group">
+		    <label for="country">Country:</label>
+		    <input type="text" class="form-control" id="country" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="preference">Preference:</label>
+		    <input type="text" class="form-control" id="preference" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="phone">Phone:</label>
+		    <input type="tel" class="form-control" id="phone" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="email">Email:</label>
+		    <input type="email" class="form-control" id="email" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="password">Password:</label>
+		    <input type="password" class="form-control" id="password" required>
+		    <span class = "passwordErrMsg">
+				
+			</span>
+		  </div>
+		  <div class="form-group">
+		    <label for="date">Date:</label>
+		    <input type="date" class="form-control" id="date" required>
+		  </div>
+		  <button type="submit" class="btn btn-default">Submit</button>
+		</form>
+		<button class="btn btn-default" id = "showTable">Display Users List</button>
+	</div>
+	<div class="tableWrapper hide">
+		<div class="searchLayout">
+			<input type="text" class="searchBox" placeholder = "Search By Name">
+		</div>
+		<div class="tableLayout">
+			<div class="tableHeader">
+
+			</div>
+			<div class="itemList">
+				
+			</div>
+		</div>
+		<div>
+			<button class="btn btn-default" id = "createUser">Create User</button>
+		</div>
+	</div>
+	<script src = "js/passwordSt.js"></script>
+	<script src = "js/formC.js"></script>
+</body>
+</html>

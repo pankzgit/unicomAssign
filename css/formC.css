@@ -1,0 +1,64 @@
+.formWrapper {
+	width: 400px; 
+	padding: 36px;
+	/*display: none;*/
+}
+
+.formWrapper.hide {
+	display: none;
+}
+
+.errorLayout {
+	border: 1px dotted;
+    margin: 12px;
+    padding: 12px;
+}
+
+.tableWrapper.hide {
+	display: none;
+}
+
+.colHeader, .colElement {
+	display: inline-block;
+	width: 123px;
+	padding: 12px;
+	border-left: 1px solid;
+}
+
+.colHeader {
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+	cursor: pointer;
+}
+
+.colElement {
+	border-bottom: 1px solid;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.over {
+	background-color: red;
+
+}
+
+.move {
+	opacity: .4;
+	background-color: #CCC;
+}
+
+.tableWrapper {
+	padding: 16px;
+}
+
+.searchLayout {
+	margin-bottom: 12px;
+}
+
+.highlight {
+	background-color: yellow;
+}
+
+.tableLayout {
+	margin-bottom: 16px;
+}
